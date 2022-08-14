@@ -1,0 +1,2 @@
+four_bot:gaussian_noise:task1:turtlebot3_simulations/turtlebot3_fake:turtlebot3_simulations/turtlebot3_gazebo:turtlebot3_simulations/turtlebot3_simulations
+-DCATKIN_DEVEL_PREFIX=/home/alok/workspace/devel -DCMAKE_INSTALL_PREFIX=/home/alok/workspace/install -G Unix Makefiles

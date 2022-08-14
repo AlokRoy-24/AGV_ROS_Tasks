@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="four_bot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.30261870219105E-17 3.96641173546126E-17 0.0300251510441287"
+        rpy="0 0 0" />
+      <mass
+        value="11.2712388980385" />
+      <inertia
+        ixx="0.0997233064490436"
+        ixy="1.05879118406788E-17"
+        ixz="1.88717947193408E-18"
+        iyy="0.356839856688409"
+        iyz="4.50397881834787E-18"
+        izz="0.449935574171081" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="front_lw">
+    <inertial>
+      <origin
+        xyz="0.25 -0.19 0.0306015705156974"
+        rpy="0 0 0" />
+      <mass
+        value="2.36241484364645" />
+      <inertia
+        ixx="0.00752050156986893"
+        ixy="-4.58158604798153E-19"
+        ixz="-1.13431828853138E-18"
+        iyy="0.0125210939731817"
+        iyz="2.23634742073282E-19"
+        izz="0.00752050156986894" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bot/meshes/front_lw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bot/meshes/front_lw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_lj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_lw" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="front_rw">
+    <inertial>
+      <origin
+        xyz="0.25 0.19 0.0306015705156973"
+        rpy="0 0 0" />
+      <mass
+        value="2.36241484364645" />
+      <inertia
+        ixx="0.00752050156986894"
+        ixy="3.66741547359948E-37"
+        ixz="1.17511704215747E-18"
+        iyy="0.0125210939731817"
+        iyz="-4.51750905202298E-21"
+        izz="0.00752050156986894" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bot/meshes/front_rw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bot/meshes/front_rw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_rj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_rw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="back_rw">
+    <inertial>
+      <origin
+        xyz="-0.25 0.19 0.0306015705156971"
+        rpy="0 0 0" />
+      <mass
+        value="2.36241484364645" />
+      <inertia
+        ixx="0.00752050156986894"
+        ixy="1.80700362080917E-20"
+        ixz="-1.18095804018957E-18"
+        iyy="0.0125210939731817"
+        iyz="-1.35525271560688E-20"
+        izz="0.00752050156986894" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bot/meshes/back_rw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bot/meshes/back_rw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_rj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_rw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="30"
+      velocity="30" />
+  </joint>
+  <link
+    name="back_lw">
+    <inertial>
+      <origin
+        xyz="-0.25 -0.19 0.0306015705156971"
+        rpy="0 0 0" />
+      <mass
+        value="2.36241484364645" />
+      <inertia
+        ixx="0.00752050156986894"
+        ixy="-3.08842102297522E-19"
+        ixz="9.86369867077633E-19"
+        iyy="0.0125210939731817"
+        iyz="-2.22950587572899E-19"
+        izz="0.00752050156986894" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bot/meshes/back_lw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://four_bot/meshes/back_lw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_jl"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_lw" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
+

@@ -1,0 +1,8 @@
+prefix=/home/alok/workspace/install
+
+Name: gaussian_noise
+Description: Description of gaussian_noise
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
